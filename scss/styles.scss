@@ -20,6 +20,15 @@ $altura-header: 20vh;
     cursor: pointer;
 }
 
+@mixin titulosInternas{
+    font-size: 3.125rem;
+    line-height: 60px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+    color: white;
+    max-width: 400px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -106,6 +115,7 @@ main{
             &__img{
                 width: 698px;
                 position: relative;
+                margin-top: 30px;
                 z-index: 1; 
             }
         }
@@ -359,6 +369,101 @@ section.alturaSeccion{
         }
     }
 }
+
+// Interna Galería
+
+div.grillaGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 85vh 5vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    header{
+        .headerGrids{
+            grid-area: header;
+        }
+        ul.gridsNav{
+            list-style-type: none;
+            display: flex;
+            margin-right: 100px;
+        }
+        .gridsNav li{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 70px;
+        }
+        
+        .gridsNav li a{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .gridsNav li a:hover{
+            color: #00B2FF;
+        }
+    }
+
+    section.sectionGrids{
+        h1{
+            @include titulosInternas;
+        }
+
+        .contenedorCarrusel{
+            width: 50%;
+            height: 600px;
+            padding-top: 15px;
+            display: flex;
+            align-self: center;
+        }
+        
+        .carousel-inner{
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        
+        footer{ 
+            .footerGrids{
+                background-color: rgba(39, 39, 39, 0.5);
+                grid-area: footer;
+                position: relative;
+                z-index: 2;
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 0.55rem;
+            }
+        }
+    }
+    .navFooter{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-content: center;
+    }
+
+    ul.navFooter{
+        margin: 0px;
+    }
+    
+    ul.navFooter li{
+        margin: 0px;
+        padding: 10px;
+        
+    }
+
+    
+
+
+
 
 
 
