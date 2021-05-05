@@ -1,1 +1,1 @@
-node_modules/
+C:\Users\Matias\Desktop\Conae_Rosa\proyectoConae\node_modules
