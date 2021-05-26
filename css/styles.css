@@ -1099,7 +1099,7 @@ div.grillaContacto {
   div.grillaContacto {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 10vh 100vh 5vh;
     grid-template-areas: "header" "section" "footer"; }
   .contenidoContacto {
     width: 100%;
