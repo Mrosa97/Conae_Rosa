@@ -1,0 +1,304 @@
+/* Media Queries versión mobile*/
+
+@media only screen and (max-width: 375px) {
+
+    /* INDEX - Header mobile */
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .logo{
+        width: 100px;
+        margin-left: 0px;
+    }
+    
+    ul.padreNav{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0 auto;
+    }
+    .padreNav li{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .padreNav li a{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .padreNav li a:hover{
+        color: #00B2FF;
+    }
+
+
+    /* INDEX - Main, Img, texto y botón */
+
+    main{
+        height: 75vh;
+    }
+    
+    section.contenidoIndex{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .contIndexUno img{
+        width: 220px;
+        position: relative;
+        margin-top: 33px;
+        z-index: 1;  
+    }
+    
+    
+    div.contIndexDos{
+        max-width: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        margin: 0 0 0 40px;
+    }
+    
+    .contIndexDos h1{
+        font-size: 2.813rem;
+        line-height: 55px;
+        margin: 0 0 10px 0;
+        color: white;
+    }
+    
+    .contIndexDos h2{
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .contIndexDos p{
+        margin-bottom: 20px;
+        color: white;
+        font-size: 0.875rem;
+    }
+    
+    .contIndexDos button{
+        background-color: #00B2FF;
+        color: #FFFFFF;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #00B2FF;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .contIndexDos button:hover{
+        background-color: #3ac4ff;
+        border-color: #3ac4ff;
+    }
+
+    /* INDEX - Footer Mobile */
+    footer{
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+        background-color: rgba(39, 39, 39, 0.5);
+        display: flex;
+        color: white;
+        flex-flow: column wrap;
+        font-size: 0.55rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: 400;
+        
+    }
+    
+    .direccion{
+        margin-left: 0px;
+    }
+    
+    .navFooter{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-content: center;
+    }
+
+    ul.navFooter{
+        margin: 0px;
+    }
+    
+    ul.navFooter li{
+        margin: 0px;
+        padding: 10px;
+        
+    }
+} /*Final de Media Queries Mobile*/
+
+@media only screen and (min-width: 379px) and (max-width: 768px) {
+
+    /* Header Tablet */
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 25vh;
+        align-content: center;
+        padding-top: 70px;
+    }
+
+    .logo{
+        width: 100px;
+        margin: 0 30px 0 0 ;
+    }
+    
+    ul.padreNav{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 35px 20px 0;
+    }
+    .padreNav li{
+        display: flex;
+        padding: 48px;
+        margin: 0px ;
+    
+    }
+    
+    .padreNav li a{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .padreNav li a:hover{
+        color: #00B2FF;
+    }
+
+
+    /* Main - Img, texto y botón */
+
+    main{
+        height: 75vh;
+    }
+    
+    section.contenidoIndex{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .contIndexUno img{
+        width: 400px;
+        position: relative;
+        margin-top: 93px;
+        z-index: 1;  
+    }
+    
+    
+    div.contIndexDos{
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        margin: 0 0 0 100px;
+    }
+    
+    .contIndexDos h1{
+        font-size: 4rem;
+        line-height: 70px;
+        margin: 0 0 15px 0;
+        color: white;
+    }
+    
+    .contIndexDos h2{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: white;
+    }
+    
+    .contIndexDos p{
+        margin-bottom: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .contIndexDos button{
+        background-color: #00B2FF;
+        color: #FFFFFF;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #00B2FF;
+        line-height: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .contIndexDos button:hover{
+        background-color: #3ac4ff;
+        border-color: #3ac4ff;
+    }
+
+    /* Footer Mobile */
+    footer{
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+        background-color: rgba(39, 39, 39, 0.5);
+        display: flex;
+        color: white;
+        flex-flow: column wrap;
+        font-size: 0.55rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: 400;
+        
+    }
+    
+    .direccion{
+        margin-left: 0px;
+    }
+    
+    .navFooter{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-content: center;
+    }
+
+    ul.navFooter{
+        margin: 0px;
+    }
+    
+    ul.navFooter li{
+        margin: 0px;
+        padding: 10px;
+        
+    }
+
+} 
+

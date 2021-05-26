@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&display=swap");
 * {
   margin: 0;
@@ -64,7 +65,7 @@ main {
     main .contIndexUno__img {
       width: 698px;
       position: relative;
-      margin-top: 30px;
+      margin-top: 125px;
       z-index: 1; }
   main .contIndexDos {
     max-width: 420px;
@@ -448,3 +449,411 @@ div.grillaContacto {
         .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos:hover {
           background-color: rgba(255, 255, 255, 0.2);
           border: 2px solid rgba(255, 255, 255, 0.7); }
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: 100vh; }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: center;
+    padding-top: 50px; }
+    header .logo {
+      width: 100px;
+      margin: 0px; }
+  ul.padreNav, .footerGrids ul.navfooter {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 auto;
+    padding: 0px; }
+    ul.padreNav li, .footerGrids ul.navfooter li {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0px 0px 0px; }
+      ul.padreNav li a, .footerGrids ul.navfooter li a {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: white; }
+        ul.padreNav li a:hover, .footerGrids ul.navfooter li a:hover {
+          color: #00B2FF; }
+  /* INDEX - Main, Img, texto y botón */
+  main {
+    height: 130vh; }
+    main section.contenidoIndex {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: flex-start; }
+      main section.contenidoIndex .contIndexUno img {
+        width: 320px;
+        position: relative;
+        margin-top: 85px;
+        z-index: 1; }
+  div.contIndexDos {
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    margin: 0 0 0 40px; }
+    div.contIndexDos h1 {
+      font-size: 2.813rem;
+      line-height: 55px;
+      margin: 0 0 10px 0;
+      color: white; }
+    div.contIndexDos h2 {
+      font-size: 1rem;
+      color: white; }
+    div.contIndexDos p {
+      margin-bottom: 20px;
+      color: white;
+      font-size: 0.875rem; }
+    div.contIndexDos button {
+      background-color: #00B2FF;
+      color: #FFFFFF;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      border-style: solid;
+      border-color: #00B2FF;
+      line-height: 30px;
+      text-align: center;
+      cursor: pointer; }
+      div.contIndexDos button:hover {
+        background-color: #3ac4ff;
+        border-color: #3ac4ff; }
+  footer {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(39, 39, 39, 0.5);
+    display: flex;
+    color: white;
+    flex-flow: column wrap;
+    font-size: 0.55rem;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 400; }
+    footer .direccion {
+      margin-left: 0px; }
+    footer ul.navFooter {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-content: center;
+      margin-right: 0px;
+      padding: 0px; }
+      footer ul.navFooter li {
+        margin: 0px;
+        padding: 10px; }
+  section.alturaSeccion {
+    height: 180vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; }
+    section.alturaSeccion .sobreNosotros {
+      margin: 0 0 60px 40px; }
+      section.alturaSeccion .sobreNosotros__titulo {
+        font-size: 3.125rem;
+        line-height: 60px;
+        margin-bottom: 18px;
+        margin-top: 8px;
+        color: white;
+        max-width: 300px; }
+      section.alturaSeccion .sobreNosotros__parrafo {
+        max-width: 270px;
+        margin-bottom: 0px; }
+      section.alturaSeccion .sobreNosotros__boton {
+        background-color: #00B2FF;
+        color: #FFFFFF;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #00B2FF;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px; }
+    section.alturaSeccion .videoNosotros iframe {
+      width: 300px;
+      height: 300px;
+      margin: 0px 0 0 25px; }
+  #grilla {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 35vh 245vh 15vh;
+    grid-template-areas: "header" "section" "footer"; }
+  .headerGrids {
+    grid-area: header;
+    padding-top: 50px; }
+    .headerGrids a.logo {
+      width: 100px;
+      margin: 0px; }
+    .headerGrids nav {
+      margin: 0;
+      padding: 0; }
+      .headerGrids nav .gridsNav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 0 0;
+        padding: 0; }
+        .headerGrids nav .gridsNav__item {
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0px 0px 0px; }
+          .headerGrids nav .gridsNav__item a {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: white; }
+            .headerGrids nav .gridsNav__item a:hover {
+              color: #00B2FF; }
+  .sectionGrids {
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 20px 0px; }
+    .sectionGrids__titulo {
+      font-size: 3.125rem;
+      line-height: 60px;
+      margin: 0 0 20px 40px;
+      color: white;
+      max-width: 400px; }
+    .sectionGrids__boton {
+      width: 40%;
+      height: 45px;
+      align-self: center;
+      color: white;
+      background-color: rgba(29, 29, 29, 0);
+      border: solid 2px white;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer; }
+      .sectionGrids__boton:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: solid 2px white; }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    max-width: 80%; }
+    .cards__card {
+      background-color: rgba(29, 29, 29, 0.8);
+      margin-bottom: 20px;
+      text-align: center;
+      border-radius: 20px;
+      transform: scale(1, 1);
+      cursor: pointer; }
+      .cards__card:hover {
+        background-color: rgba(59, 59, 59, 0.8);
+        transform: scale(1.05, 1.05); }
+      .cards__card a {
+        text-decoration: none;
+        color: white; }
+      .cards__card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0 0; }
+      .cards__card h3 {
+        color: white;
+        padding-top: 20px; }
+      .cards__card p {
+        padding: 10px 30px 30px 30px;
+        font-size: 0.875rem; }
+  .footerGrids {
+    background-color: rgba(39, 39, 39, 0.5);
+    grid-area: footer;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.55rem; }
+    .footerGrids ul .navFooter {
+      margin-right: 170px;
+      margin-bottom: 0px; }
+  div.grillaGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35vh 80vh 15vh;
+    grid-template-areas: "header" "section" "footer"; }
+  .headerGrids {
+    grid-area: header; }
+    .headerGrids a.logo {
+      width: 100px;
+      margin: 0px; }
+  section.sectionGrids {
+    grid-area: section; }
+    section.sectionGrids h1 {
+      font-size: 3.125rem;
+      line-height: 60px;
+      margin-bottom: 18px;
+      margin-top: 8px;
+      color: white;
+      max-width: 400px;
+      margin-left: 30px; }
+    section.sectionGrids .contenedorCarrusel {
+      width: 90%;
+      height: 600px;
+      padding-top: 60px;
+      display: flex;
+      align-self: center; }
+    section.sectionGrids .carousel-inner {
+      border: 2px solid white;
+      border-radius: 10px; }
+  div.grillaContacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh 145vh 15vh;
+    grid-template-areas: "header" "section" "footer"; }
+  .headerGrids {
+    grid-area: header; }
+    .headerGrids .logo {
+      width: 100px;
+      margin: 0px; }
+  .contenidoContacto {
+    width: 100%;
+    display: flex;
+    grid-area: section;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+    .contenidoContacto div img.imgFormulario {
+      width: 300px;
+      margin-bottom: 10px; }
+    .contenidoContacto div.contenedorFormulario {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-left: 0px; }
+      .contenidoContacto div.contenedorFormulario h1 {
+        font-size: 3.125rem;
+        line-height: 60px;
+        margin-bottom: 18px;
+        margin-top: 8px;
+        color: white;
+        max-width: 400px; }
+      .contenidoContacto div.contenedorFormulario div {
+        display: flex; }
+        .contenidoContacto div.contenedorFormulario div form {
+          background: #272727;
+          background: linear-gradient(150deg, #272727 0%, rgba(39, 39, 39, 0.521429) 100%);
+          border-radius: 10px;
+          width: 100%;
+          height: 550px;
+          padding: 30px 0px 3px 15px;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 0.938rem;
+          margin: 0 0 20px 0; }
+          .contenidoContacto div.contenedorFormulario div form label {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: white;
+            padding-left: 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.input {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            width: 85%;
+            height: 35px;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            padding-left: 15px;
+            margin: 10px 0 15px 15px; }
+          .contenidoContacto div.contenedorFormulario div form select.input {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            width: 85%;
+            height: 35px;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            padding-left: 15px;
+            margin: 10px 0 15px 15px; }
+            .contenidoContacto div.contenedorFormulario div form select.input option.option {
+              background-color: #2b2b2b;
+              color: #FFFFFF;
+              font-family: 'Source Sans Pro', sans-serif;
+              font-size: 0.938rem;
+              font-weight: 400; }
+          .contenidoContacto div.contenedorFormulario div form textarea.textArea {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            width: 85%;
+            height: 90px;
+            color: white;
+            padding: 10px 0px 10px 15px;
+            margin: 10px 0px 15px 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.checkbox {
+            margin-left: 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.botonEnviar {
+            background-color: #00B2FF;
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            width: 160px;
+            height: 35px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #00B2FF;
+            line-height: 20px;
+            margin: 25px 0px 10px 0px;
+            cursor: pointer; }
+            .contenidoContacto div.contenedorFormulario div form input.botonEnviar:hover {
+              background-color: #3ac4ff;
+              border-color: #3ac4ff; }
+          .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos {
+            background-color: rgba(255, 255, 255, 0);
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 160px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            margin-left: 0px;
+            cursor: pointer; }
+            .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+              border: 2px solid rgba(255, 255, 255, 0.7); }
+          .contenidoContacto div.contenedorFormulario div form div.btn_form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center; }
+          .contenidoContacto div.contenedorFormulario div form .terminos {
+            padding-left: 2px; } }

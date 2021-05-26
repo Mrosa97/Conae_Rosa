@@ -115,7 +115,7 @@ main{
             &__img{
                 width: 698px;
                 position: relative;
-                margin-top: 30px;
+                margin-top: 125px;
                 z-index: 1; 
             }
         }
@@ -603,8 +603,559 @@ div.grillaContacto{
     }
 }
 
+@media only screen and (max-width: 375px){
+
+    body{
+        height: 100vh;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+        padding-top: 50px;
+
+        .logo{
+            width: 100px;
+            margin: 0px;
+        }
+    }
+    ul.padreNav{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px 0 auto;
+        padding: 0px;
+
+        & li{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0px 0px 0px;
+
+            & a{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: #00B2FF;
+                }
+            }
+        }
+    }
+
+    /* INDEX - Main, Img, texto y botón */
+
+    main{
+        height: 130vh;
+
+        section.contenidoIndex{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: flex-start;
+    
+            .contIndexUno img{
+                width: 320px;
+                position: relative;
+                margin-top: 85px;
+                z-index: 1;  
+            }
+        }
+    }
+
+    div.contIndexDos{
+        max-width: 290px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 50px;
+        margin: 0 0 0 40px;
+
+        & h1{
+            font-size: 2.813rem;
+            line-height: 55px;
+            margin: 0 0 10px 0;
+            color: white;
+        }
+        
+        & h2{
+            font-size: 1rem;
+            color: white;
+        }
+        
+        & p{
+            margin-bottom: 20px;
+            color: white;
+            font-size: 0.875rem;
+        }
+        
+        & button{
+            background-color: #00B2FF;
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #00B2FF;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #3ac4ff;
+                border-color: #3ac4ff;
+            }
+        }
+    }
+
+    footer{
+        width: 100%;
+        height: 15vh;
+        position: relative;
+        z-index: 2;
+        background-color: rgba(39, 39, 39, 0.5);
+        display: flex;
+        color: white;
+        flex-flow: column wrap;
+        font-size: 0.55rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-weight: 400;
+
+        .direccion{
+            margin-left: 0px;
+        }
+
+        ul.navFooter{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            align-content: center;
+            margin-right: 0px;
+            padding: 0px;
+
+            & li{
+                margin: 0px;
+                padding: 10px;
+            }
+        }
+    }
+
+    // Nosotros
+
+    section.alturaSeccion{
+        height: 180vh;
+        padding-top: 50px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    
+        .sobreNosotros{
+            margin: 0 0 60px 40px;
+            &__titulo{
+                font-size: 3.125rem;
+                line-height: 60px;
+                margin-bottom: 18px;
+                margin-top: 8px;
+                color: white;
+                max-width: 300px;
+            }
+            &__parrafo{
+                max-width: 270px;
+                margin-bottom: 0px;
+            }
+            &__boton{
+                @include boton;
+                margin-top: 10px;
+            }
+        }
+    
+        .videoNosotros iframe{
+            width: 300px;
+            height: 300px;
+            margin: 0px 0 0 25px;
+        }
+    }
+
+    // Noticias
+
+    #grilla{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 35vh 245vh 15vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
 
 
+    .headerGrids{
+        grid-area: header;
+        padding-top: 50px;
+
+        a.logo{
+            width: 100px;
+            margin: 0px;
+        }
+
+        nav{
+            margin: 0;
+            padding: 0;
+            
+            .gridsNav{
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0 0 0;
+                padding: 0;
+            
+                &__item{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 0px 0px 0px;
+                    
+                    a{
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: white;
+            
+                        &:hover{
+                            color: #00B2FF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sectionGrids{
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+    
+        &__titulo{
+            font-size: 3.125rem;
+            line-height: 60px;
+            margin: 0 0 20px 40px;
+            color: white;
+            max-width: 400px;
+        }
+    
+        &__boton{
+            width: 40%;
+            height: 45px;
+            align-self: center;
+            color: white;
+            background-color: rgba(29, 29, 29, 0);
+            border: solid 2px white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+    
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+                border: solid 2px white;
+            }
+        }
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        max-width: 80%;
+    
+        &__card{
+            background-color: rgba(29, 29, 29, 0.8);
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 20px;
+            transform: scale(1,1);
+            cursor: pointer;
+    
+            &:hover{
+                background-color: rgba(59, 59, 59, 0.8);
+                transform: scale(1.05,1.05);
+            }
+    
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+    
+            & img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+    
+            & h3{
+                color: white;
+                padding-top: 20px;
+            }
+    
+            & p{
+                padding: 10px 30px 30px 30px;
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    .footerGrids{
+        background-color: rgba(39, 39, 39, 0.5);
+        grid-area: footer;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.55rem;
+
+        ul{
+            .navFooter{
+                margin-right: 170px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    // Galería
+
+    div.grillaGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35vh 80vh 15vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    .headerGrids{
+        grid-area: header;
+        a.logo{
+            width: 100px;
+            margin: 0px;
+        }
+    }
+
+    
+
+    section.sectionGrids{
+        grid-area: section;
+
+        h1{
+            @include titulosInternas;
+            margin-left: 30px;
+        }
+
+        .contenedorCarrusel{
+            width: 90%;
+            height: 600px;
+            padding-top: 60px;
+            display: flex;
+            align-self: center;
+        }
+        
+        .carousel-inner{
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+    }
+
+    // Contacto
+
+    div.grillaContacto{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40vh 145vh 15vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    .headerGrids{
+        grid-area: header;
+        .logo{
+            width: 100px;
+            margin: 0px;
+        }
+    }
+
+    .contenidoContacto{
+        width: 100%;
+        display: flex;
+        grid-area: section;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin:0;
+        padding: 0;
+    
+        div{
+            img.imgFormulario{
+                width: 300px;
+                margin-bottom: 10px;
+            }
+        }
+    
+        div.contenedorFormulario{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-left: 0px;
+    
+            h1{
+                @include titulosInternas;
+            }
+    
+            div{
+                display: flex;
+
+                form{
+                    background: rgb(39,39,39);
+                    background: linear-gradient(150deg, rgba(39,39,39,1) 0%, rgba(39,39,39,0.5214286398153012) 100%);
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 550px;
+                    padding: 30px 0px 3px 15px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 0.938rem;
+                    margin: 0 0 20px 0;
+    
+                    label{
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        color: white;
+                        padding-left: 15px;
+                    }
+                    input.input{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        width: 85%;
+                        height: 35px;
+                        color: white;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        padding-left: 15px;
+                        margin: 10px 0 15px 15px;
+                    }
+                    select.input{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        width: 85%;
+                        height: 35px;
+                        color: white;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        padding-left: 15px;
+                        margin: 10px 0 15px 15px;
+    
+                        option.option{
+                            background-color: rgb(43, 43, 43);
+                            color: #FFFFFF; 
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 0.938rem;
+                            font-weight: 400;;
+                        }
+                    }
+                    textarea.textArea{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        width: 85%;
+                        height: 90px;
+                        color: white;
+                        padding: 10px 0px 10px 15px;
+                        margin: 10px 0px 15px 15px;
+                    }
+                    input.checkbox{
+                        margin-left: 15px;
+                    }
+                    input.botonEnviar{
+                        background-color: #00B2FF;
+                        color: #FFFFFF;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        width: 160px;
+                        height: 35px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-color: #00B2FF;
+                        line-height: 20px;
+                        margin:25px 0px 10px 0px;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background-color: #3ac4ff;
+                            border-color: #3ac4ff;
+                        }
+                    }
+                    input.botonBorrarDatos{
+                        background-color: rgba(255, 255, 255, 0);
+                        color: #FFFFFF;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        width: 160px;
+                        height: 35px;
+                        border-radius: 5px;
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        margin-left: 0px;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.2);
+                            border: 2px solid rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    
+                    div.btn_form{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                    .terminos{
+                        padding-left: 2px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
 
 
 
