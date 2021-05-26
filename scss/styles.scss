@@ -1336,6 +1336,150 @@ div.grillaContacto{
             margin-right: 170px;
         }
     }
+
+    // Interna Noticias
+
+    #grilla{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 100vh 5vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    .headerGrids{
+        grid-area: header;
+    }
+
+    .gridsNav{
+        list-style-type: none;
+        display: flex;
+        margin-right: 100px;
+
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 70px;
+
+            a{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 1rem;
+                font-weight: 700;
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: #00B2FF;
+                }
+            }
+        }
+    }
+
+
+    .sectionGrids{
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 165px 20px 100px;
+
+        &__titulo{
+            font-size: 3.125rem;
+            line-height: 60px;
+            margin-bottom: 18px;
+            margin-top: 8px;
+            color: white;
+            max-width: 400px;
+        }
+
+        &__boton{
+            width: 15%;
+            height: 45px;
+            align-self: center;
+            color: white;
+            background-color: rgba(29, 29, 29, 0);
+            border: solid 2px white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+                border: solid 2px white;
+            }
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+        &__card{
+            background-color: rgba(29, 29, 29, 0.8);
+            flex-basis: calc(33.3% - 2rem);
+            text-align: center;
+            border-radius: 20px;
+            transform: scale(1,1);
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgba(59, 59, 59, 0.8);
+                transform: scale(1.05,1.05);
+            }
+
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+
+            & img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+
+            & h3{
+                color: white;
+                padding-top: 20px;
+            }
+
+            & p{
+                padding: 10px 30px 30px 30px;
+            }
+        }
+    }
+
+    .footerGrids{
+        background-color: rgba(39, 39, 39, 0.5);
+        grid-area: footer;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.55rem;
+
+        ul.navfooter{
+            list-style-type: none;
+            display: flex;
+            margin-right: 100px;
+            margin-right: 170px;
+            margin-bottom: 0px;
+
+            &__item{
+                margin-left: 30px;
+            }
+        }
+    }
+
 }
 
 
