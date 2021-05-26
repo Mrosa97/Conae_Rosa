@@ -962,4 +962,41 @@ div.grillaContacto {
       margin-right: 170px;
       margin-bottom: 0px; }
       footer div .navFooter__item {
-        margin-left: 30px; } }
+        margin-left: 30px; }
+  section.alturaSeccion {
+    height: 85vh;
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section.alturaSeccion .sobreNosotros {
+      margin-left: 100px; }
+      section.alturaSeccion .sobreNosotros__titulo {
+        font-size: 3.125rem;
+        line-height: 60px;
+        margin-bottom: 18px;
+        margin-top: 8px;
+        color: white;
+        max-width: 300px; }
+      section.alturaSeccion .sobreNosotros__parrafo {
+        max-width: 420px;
+        margin-bottom: 15px; }
+      section.alturaSeccion .sobreNosotros__boton {
+        background-color: #00B2FF;
+        color: #FFFFFF;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 120px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-color: #00B2FF;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 10px; }
+    section.alturaSeccion .videoNosotros iframe {
+      width: 600px;
+      height: 400px;
+      margin-right: 170px; } }

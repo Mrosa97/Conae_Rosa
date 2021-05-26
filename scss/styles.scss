@@ -1300,6 +1300,42 @@ div.grillaContacto{
             
         }
     }
+
+    // Interna nosotros
+
+    section.alturaSeccion{
+        height: 85vh;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .sobreNosotros{
+            margin-left: 100px;
+            &__titulo{
+                font-size: 3.125rem;
+                line-height: 60px;
+                margin-bottom: 18px;
+                margin-top: 8px;
+                color: white;
+                max-width: 300px;
+            }
+            &__parrafo{
+                max-width: 420px;
+                margin-bottom: 15px;
+            }
+            &__boton{
+                @include boton;
+                margin-top: 10px;
+            }
+        }
+
+        .videoNosotros iframe{
+            width: 600px;
+            height: 400px;
+            margin-right: 170px;
+        }
+    }
 }
 
 
