@@ -65,7 +65,7 @@ main {
     flex-direction: column;
     justify-content: flex-end; }
     main .contIndexUno__img {
-      width: 698px;
+      width: 600px;
       position: relative;
       margin-top: 0px;
       z-index: 1; }
@@ -170,7 +170,7 @@ section.alturaSeccion {
 #grilla {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-rows: 10vh 90vh 5vh;
   grid-template-areas: "header" "section" "footer"; }
 
 .headerGrids {
@@ -206,7 +206,7 @@ section.alturaSeccion {
     color: white;
     max-width: 400px; }
   .sectionGrids__boton {
-    width: 10%;
+    width: 15%;
     height: 45px;
     align-self: center;
     color: white;
@@ -350,11 +350,11 @@ div.grillaContacto {
   justify-content: flex-start;
   margin-left: 90px; }
   .contenidoContacto div img.imgFormulario {
-    width: 720px; }
+    width: 680px; }
   .contenidoContacto div.contenedorFormulario {
     display: flex;
     flex-direction: column;
-    width: 21%;
+    width: 24%;
     margin-left: 130px; }
     .contenidoContacto div.contenedorFormulario h1 {
       font-size: 3.125rem;

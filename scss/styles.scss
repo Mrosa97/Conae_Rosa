@@ -115,7 +115,7 @@ main{
             justify-content: flex-end;
             
             &__img{
-                width: 698px;
+                width: 600px;
                 position: relative;
                 margin-top: 0px;
                 z-index: 1; 
@@ -236,7 +236,7 @@ section.alturaSeccion{
 #grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 10vh 90vh 5vh;
     grid-template-areas: 
                         "header"
                         "section"
@@ -289,7 +289,7 @@ section.alturaSeccion{
     }
 
     &__boton{
-        width: 10%;
+        width: 15%;
         height: 45px;
         align-self: center;
         color: white;
@@ -483,14 +483,14 @@ div.grillaContacto{
 
     div{
         img.imgFormulario{
-            width: 720px;
+            width: 680px;
         }
     }
 
     div.contenedorFormulario{
         display: flex;
         flex-direction: column;
-        width: 21%;
+        width: 24%;
         margin-left: 130px;
 
         h1{
