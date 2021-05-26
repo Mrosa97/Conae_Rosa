@@ -100,17 +100,19 @@ header{
 
 main{
     height: 85vh;
-    width: 100vh;
+    width: 100vw;
     
         section.contenidoIndex{
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
+            height: 90vh;
         }
     
         .contIndexUno{
             display: flex;
             flex-direction: column;
+            justify-content: flex-end;
             
             &__img{
                 width: 698px;
@@ -183,7 +185,7 @@ footer{
         .navFooter{
             display: flex;
             list-style-type: none;
-            margin-right: 170px;
+            margin-right: 120px;
             margin-bottom: 0px;
                 
             &__item{
@@ -1161,6 +1163,143 @@ div.grillaContacto{
 
 @media only screen and (min-width: 769px) and (max-width: 1366px){
     
+    // Index
+
+    header{
+        display: flex;
+        height: $altura-header/2;
+        justify-content: space-between;
+        align-content: center;
+    
+            .logo{
+                width: 110px;
+                margin-left: 100px;
+            }
+    
+                .padreNav{
+                    list-style-type: none;
+                    display: flex;
+                    margin-right: 100px;
+                    margin-bottom: 0px;
+    
+                    &__item{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-right: 70px;
+    
+                        a{
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }   
+                .padreNav li a:hover{
+                    color: #00B2FF;
+                }
+    }
+    
+    /*Main*/
+    
+    main{
+        height: 85vh;
+        width: 100vw;
+        
+            section.contenidoIndex{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                height: 90vh;
+            }
+        
+            .contIndexUno{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
+                &__img{
+                    width: 500px;
+                    position: relative;
+                    margin-top: 0px;
+                    z-index: 1; 
+                }
+            }
+            
+            .contIndexDos{
+                max-width: 420px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 150px;
+                padding-top: 110px;
+            
+                &__exploracion{
+                font-size: 5rem;
+                line-height: 90px;
+                margin-bottom: 18px;
+                margin-top: 8px;
+                color: white;
+                }
+            
+                &__futuro{
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: 700;
+                    font-style: italic;
+                }
+            
+                p{
+                    margin-bottom: 30px;
+                    color: white; 
+                }
+            
+                &__boton{
+                    @include boton;
+                }
+            }
+        }
+    
+    
+    
+    
+    footer{
+        height: 5vh;
+        position: relative;
+        z-index: 2;
+        background-color: rgba(39, 39, 39, 0.5);
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        align-items: center;
+        font-size: 0.55rem;
+    
+        h2{
+            font-family: $font-source;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 0px;
+        }
+    
+        .direccion{
+            margin-left: 100px;
+        }
+    
+        div{
+            .navFooter{
+                display: flex;
+                list-style-type: none;
+                margin-right: 170px;
+                margin-bottom: 0px;
+                    
+                &__item{
+                    margin-left: 30px;
+                }
+            }
+            
+        }
+    }
 }
 
 
