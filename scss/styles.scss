@@ -577,6 +577,7 @@ div.grillaContacto{
                     border-style: solid;
                     border-color: #00B2FF;
                     line-height: 20px;
+                    margin-right: 10px;
                     
                     cursor: pointer;
 
@@ -603,13 +604,18 @@ div.grillaContacto{
                         border: 2px solid rgba(255, 255, 255, 0.7);
                     }
                 }
-            }
-        }
-        div{
-            .btn_form{
-                display: flex;
-                justify-content: space-evenly;
-                margin-top: 20px;
+                div.btn_form{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                }
+
+                .terminos{
+                    padding-left: 2px;
+                }
             }
         }
     }

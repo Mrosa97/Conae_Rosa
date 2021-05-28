@@ -432,6 +432,7 @@ div.grillaContacto {
         border-style: solid;
         border-color: #00B2FF;
         line-height: 20px;
+        margin-right: 10px;
         cursor: pointer; }
         .contenidoContacto div.contenedorFormulario div form input.botonEnviar:hover {
           background-color: #3ac4ff;
@@ -451,10 +452,15 @@ div.grillaContacto {
         .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos:hover {
           background-color: rgba(255, 255, 255, 0.2);
           border: 2px solid rgba(255, 255, 255, 0.7); }
-    .contenidoContacto div.contenedorFormulario div .btn_form {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 20px; }
+      .contenidoContacto div.contenedorFormulario div form div.btn_form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px; }
+      .contenidoContacto div.contenedorFormulario div form .terminos {
+        padding-left: 2px; }
 
 @media only screen and (max-width: 375px) {
   body {
