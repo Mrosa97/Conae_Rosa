@@ -908,7 +908,7 @@ div.grillaContacto {
       flex-direction: column;
       justify-content: flex-end; }
       main .contIndexUno__img {
-        width: 500px;
+        width: 31.25rem;
         position: relative;
         margin-top: 0px;
         z-index: 1; }
