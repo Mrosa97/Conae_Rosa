@@ -65,7 +65,7 @@ main {
     flex-direction: column;
     justify-content: flex-end; }
     main .contIndexUno__img {
-      width: 550px;
+      width: 34.375rem;
       position: relative;
       margin-top: 0px;
       z-index: 1; }
@@ -351,7 +351,7 @@ div.grillaContacto {
   justify-content: flex-start;
   margin-left: 90px; }
   .contenidoContacto div img.imgFormulario {
-    width: 550px; }
+    width: 34.375rem; }
   .contenidoContacto div.contenedorFormulario {
     display: flex;
     flex-direction: column;
