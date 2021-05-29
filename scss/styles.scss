@@ -1978,6 +1978,239 @@ div.grillaContacto{
         position: relative;
         z-index: 2;
         display: flex;
+        flex-direction: row;
+        color: white;
+        justify-content: space-between;
+        font-size: 0.55rem;
+    
+        ul.navfooter{
+            list-style-type: none;
+            display: flex;
+            margin: 0 100px 0 0;
+    
+            &__item{
+                margin-left: 0px;
+            }
+        }
+    
+        .sociales{
+            margin-right: 40px;
+        }
+    }
+
+    // Galería Tablet
+
+    div.grillaGaleria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 75vh 5vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    section.sectionGrids{
+        h1{
+            @include titulosInternas;
+            grid-area: section;
+            margin: 8px 0 0px 80px;
+        }
+
+        .contenedorCarrusel{
+            width: 95%;
+            height: 600px;
+            padding-top: 0px;
+            display: flex;
+            align-self: center;
+            align-items: center;
+        }
+        
+        .carousel-inner{
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+    }
+
+    // Contacto tablet
+
+    div.grillaContacto{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 20vh 100vh 5vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    .headerGrids{
+        grid-area: header;
+        .logo{
+            width: 100px;
+            margin: 0px;
+        }
+    }
+
+    .contenidoContacto{
+        width: 100%;
+        display: flex;
+        grid-area: section;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin:0;
+        padding: 0;
+    
+        div{
+            img.imgFormulario{
+                width: 300px;
+                margin-bottom: 10px;
+            }
+        }
+    
+        div.contenedorFormulario{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            // align-items: center;
+            margin-left: 0px;
+    
+            h1{
+                @include titulosInternas;
+            }
+    
+            div{
+                display: flex;
+
+                form{
+                    background: rgb(39,39,39);
+                    background: linear-gradient(150deg, rgba(39,39,39,1) 0%, rgba(39,39,39,0.5214286398153012) 100%);
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 550px;
+                    padding: 30px 15px 3px 15px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 0.938rem;
+                    margin: 0 0 20px 0;
+    
+                    label{
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        color: white;
+                        padding-left: 15px;
+                    }
+                    input.input{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        width: 85%;
+                        height: 35px;
+                        color: white;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        padding-left: 15px;
+                        margin: 10px 0 15px 15px;
+                    }
+                    select.input{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        width: 85%;
+                        height: 35px;
+                        color: white;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        padding-left: 15px;
+                        margin: 10px 0 15px 15px;
+    
+                        option.option{
+                            background-color: rgb(43, 43, 43);
+                            color: #FFFFFF; 
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 0.938rem;
+                            font-weight: 400;;
+                        }
+                    }
+                    textarea.textArea{
+                        background-color: rgba(43, 43, 43, 0);
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        border-radius: 10px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 0.938rem;
+                        width: 85%;
+                        height: 90px;
+                        color: white;
+                        padding: 10px 0px 10px 15px;
+                        margin: 10px 0px 15px 15px;
+                    }
+                    input.checkbox{
+                        margin-left: 15px;
+                    }
+                    input.botonEnviar{
+                        background-color: #00B2FF;
+                        color: #FFFFFF;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        width: 160px;
+                        height: 35px;
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-color: #00B2FF;
+                        line-height: 20px;
+                        margin:5px 0px 10px 0px;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background-color: #3ac4ff;
+                            border-color: #3ac4ff;
+                        }
+                    }
+                    input.botonBorrarDatos{
+                        background-color: rgba(255, 255, 255, 0);
+                        color: #FFFFFF;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        width: 160px;
+                        height: 35px;
+                        border-radius: 5px;
+                        border: 2px solid rgba(255, 255, 255, 0.4);
+                        margin-left: 0px;
+                        cursor: pointer;
+    
+                        &:hover{
+                            background-color: rgba(255, 255, 255, 0.2);
+                            border: 2px solid rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    
+                    div.btn_form{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                    .terminos{
+                        padding-left: 2px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .footerGrids{
+        background-color: rgba(39, 39, 39, 0.5);
+        grid-area: footer;
+        position: relative;
+        z-index: 2;
+        display: flex;
         color: white;
         justify-content: space-between;
         font-size: 0.55rem;

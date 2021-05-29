@@ -1471,6 +1471,180 @@ div.grillaContacto {
     position: relative;
     z-index: 2;
     display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    font-size: 0.55rem; }
+    .footerGrids ul.navfooter {
+      list-style-type: none;
+      display: flex;
+      margin: 0 100px 0 0; }
+      .footerGrids ul.navfooter__item {
+        margin-left: 0px; }
+    .footerGrids .sociales {
+      margin-right: 40px; }
+  div.grillaGaleria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 75vh 5vh;
+    grid-template-areas: "header" "section" "footer"; }
+  section.sectionGrids h1 {
+    font-size: 3.125rem;
+    line-height: 60px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+    color: white;
+    max-width: 400px;
+    grid-area: section;
+    margin: 8px 0 0px 80px; }
+  section.sectionGrids .contenedorCarrusel {
+    width: 95%;
+    height: 600px;
+    padding-top: 0px;
+    display: flex;
+    align-self: center;
+    align-items: center; }
+  section.sectionGrids .carousel-inner {
+    border: 2px solid white;
+    border-radius: 10px; }
+  div.grillaContacto {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 100vh 5vh;
+    grid-template-areas: "header" "section" "footer"; }
+  .headerGrids {
+    grid-area: header; }
+    .headerGrids .logo {
+      width: 100px;
+      margin: 0px; }
+  .contenidoContacto {
+    width: 100%;
+    display: flex;
+    grid-area: section;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+    .contenidoContacto div img.imgFormulario {
+      width: 300px;
+      margin-bottom: 10px; }
+    .contenidoContacto div.contenedorFormulario {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-left: 0px; }
+      .contenidoContacto div.contenedorFormulario h1 {
+        font-size: 3.125rem;
+        line-height: 60px;
+        margin-bottom: 18px;
+        margin-top: 8px;
+        color: white;
+        max-width: 400px; }
+      .contenidoContacto div.contenedorFormulario div {
+        display: flex; }
+        .contenidoContacto div.contenedorFormulario div form {
+          background: #272727;
+          background: linear-gradient(150deg, #272727 0%, rgba(39, 39, 39, 0.521429) 100%);
+          border-radius: 10px;
+          width: 100%;
+          height: 550px;
+          padding: 30px 15px 3px 15px;
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 0.938rem;
+          margin: 0 0 20px 0; }
+          .contenidoContacto div.contenedorFormulario div form label {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: white;
+            padding-left: 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.input {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            width: 85%;
+            height: 35px;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            padding-left: 15px;
+            margin: 10px 0 15px 15px; }
+          .contenidoContacto div.contenedorFormulario div form select.input {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            width: 85%;
+            height: 35px;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            padding-left: 15px;
+            margin: 10px 0 15px 15px; }
+            .contenidoContacto div.contenedorFormulario div form select.input option.option {
+              background-color: #2b2b2b;
+              color: #FFFFFF;
+              font-family: 'Source Sans Pro', sans-serif;
+              font-size: 0.938rem;
+              font-weight: 400; }
+          .contenidoContacto div.contenedorFormulario div form textarea.textArea {
+            background-color: rgba(43, 43, 43, 0);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 0.938rem;
+            width: 85%;
+            height: 90px;
+            color: white;
+            padding: 10px 0px 10px 15px;
+            margin: 10px 0px 15px 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.checkbox {
+            margin-left: 15px; }
+          .contenidoContacto div.contenedorFormulario div form input.botonEnviar {
+            background-color: #00B2FF;
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            width: 160px;
+            height: 35px;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: #00B2FF;
+            line-height: 20px;
+            margin: 5px 0px 10px 0px;
+            cursor: pointer; }
+            .contenidoContacto div.contenedorFormulario div form input.botonEnviar:hover {
+              background-color: #3ac4ff;
+              border-color: #3ac4ff; }
+          .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos {
+            background-color: rgba(255, 255, 255, 0);
+            color: #FFFFFF;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 160px;
+            height: 35px;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            margin-left: 0px;
+            cursor: pointer; }
+            .contenidoContacto div.contenedorFormulario div form input.botonBorrarDatos:hover {
+              background-color: rgba(255, 255, 255, 0.2);
+              border: 2px solid rgba(255, 255, 255, 0.7); }
+          .contenidoContacto div.contenedorFormulario div form div.btn_form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center; }
+          .contenidoContacto div.contenedorFormulario div form .terminos {
+            padding-left: 2px; }
+  .footerGrids {
+    background-color: rgba(39, 39, 39, 0.5);
+    grid-area: footer;
+    position: relative;
+    z-index: 2;
+    display: flex;
     color: white;
     justify-content: space-between;
     font-size: 0.55rem; }
