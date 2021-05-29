@@ -1662,6 +1662,8 @@ div.grillaContacto{
 
 @media only screen and (min-width: 376px) and (max-width: 768px){
     
+    // Index tablet
+
     header{
         display: flex;
         flex-direction: column;
@@ -1801,7 +1803,7 @@ div.grillaContacto{
         }
     }
 
-    // Nosotros
+    // Nosotros Tablet
 
     section.alturaSeccion{
         height: 110vh;
@@ -1838,6 +1840,163 @@ div.grillaContacto{
             margin: 0 auto;
         }
     }
+
+    // Noticias tablet
+
+    #grilla{
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 20vh 165vh 5vh;
+        grid-template-areas: 
+                            "header"
+                            "section"
+                            "footer"
+                            ;
+    }
+
+    header{
+        .headerGrids{
+            grid-area: header;
+        }
+
+        .gridsNav{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0px 0px 0;
+            padding: 0px;
+        
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                margin-right: 0px;
+        
+                a{
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 1rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: white;
+        
+                    &:hover{
+                        color: #00B2FF;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .sectionGrids{
+        grid-area: section;
+        display: flex;
+        flex-direction: column;
+        // margin: 20px 165px 20px 100px;
+        margin: 0px;
+        width: 90%;
+        margin: 0 auto;
+    
+        &__titulo{
+            font-size: 3.125rem;
+            line-height: 60px;
+            margin-bottom: 18px;
+            margin-top: 8px;
+            margin: 8px 0 18px 80px;
+            color: white;
+            max-width: 400px;
+        }
+    
+        &__boton{
+            width: 20%;
+            height: 45px;
+            align-self: center;
+            color: white;
+            background-color: rgba(29, 29, 29, 0);
+            border: solid 2px white;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+    
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.2);
+                border: solid 2px white;
+            }
+        }
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        margin: 20px 0 20px 0;      
+    
+        &__card{
+            background-color: rgba(29, 29, 29, 0.8);
+            width: 50%;
+            text-align: center;
+            border-radius: 20px;
+            transform: scale(1,1);
+            cursor: pointer;
+            margin-bottom: 30px;
+    
+            &:hover{
+                background-color: rgba(59, 59, 59, 0.8);
+                transform: scale(1.05,1.05);
+            }
+    
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+    
+            & img{
+                max-width: 100%;
+                height: auto;
+                border-radius: 20px 20px 0 0;
+            }
+    
+            & h3{
+                color: white;
+                padding-top: 20px;
+            }
+    
+            & p{
+                padding: 10px 30px 30px 30px;
+            }
+        }
+    }
+    
+    .footerGrids{
+        background-color: rgba(39, 39, 39, 0.5);
+        grid-area: footer;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        font-size: 0.55rem;
+    
+        ul.navfooter{
+            list-style-type: none;
+            display: flex;
+            margin: 0 100px 0 0;
+    
+            &__item{
+                margin-left: 0px;
+            }
+        }
+    
+        .sociales{
+            margin-right: 40px;
+        }
+    }
+
 
 }
 
